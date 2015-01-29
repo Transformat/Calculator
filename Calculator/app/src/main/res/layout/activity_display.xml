@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.calculator.activites.Display">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FILTER BY:"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="#ff0e36ff"
+        android:id="@+id/tv_filter"/>
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_filter"
+        android:id="@+id/spinner_filter"
+        />
+    <ListView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv_filter"
+        android:layout_above="@+id/button_clear"
+        android:layout_marginTop="30dp"
+        android:id="@+id/list_view"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLEAR"
+        android:id="@+id/button_clear"
+        android:background="#ff7851ff"
+        android:layout_alignParentBottom="true"
+        android:onClick="onClick"
+        />
+
+
+</RelativeLayout>
